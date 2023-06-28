@@ -22,17 +22,7 @@ public class Domicilio {
     private Set<Paciente> pacientes;
     public Domicilio() {
     }
-//
 
-
-
-//    public List<Paciente> getPacientes() {
-//        return pacientes;
-//    }
-
-//    public void setPacientes(List<Paciente> pacientes) {
-//        this.pacientes = pacientes;
-//    }
 
     public Domicilio(String calle, Integer numero, String localidad, String provincia, Set<Paciente> pacientes) {
         this.calle = calle;
@@ -50,14 +40,6 @@ public class Domicilio {
     }
 
 
-//    public Domicilio(Long id, String calle, Integer numero, String localidad, String provincia, List<Paciente> pacientes) {
-//        this.id = id;
-//        this.calle = calle;
-//        this.numero = numero;
-//        this.localidad = localidad;
-//        this.provincia = provincia;
-//        this.pacientes = pacientes;
-//    }
 
     public Domicilio(Long id, String calle, Integer numero, String localidad, String provincia) {
         this.id = id;

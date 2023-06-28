@@ -21,10 +21,6 @@ public class Odontologo {
 
 
 
-
-//    @OneToMany(mappedBy = "odontologo")
-//    @JsonIgnore
-//    private List<Paciente> pacientes;
     public Odontologo() {
     }
 
@@ -43,21 +39,7 @@ public class Odontologo {
     }
 
 
-    //    public List<Paciente> getPacientes() {
-//        return pacientes;
-//    }
 
-//    public void setPacientes(List<Paciente> pacientes) {
-//        this.pacientes = pacientes;
-//    }
-//
-//    public Odontologo(Long id, String apellido, String nombre, String matricula, List<Paciente> pacientes) {
-//        this.id = id;
-//        this.apellido = apellido;
-//        this.nombre = nombre;
-//        this.matricula = matricula;
-//        this.pacientes = pacientes;
-//    }
 
     public Odontologo(Long id, String apellido, String nombre, String matricula) {
         this.id = id;

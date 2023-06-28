@@ -26,14 +26,6 @@ public class Paciente {
     private Set<Turno> turnos;
 
 
-//    @ManyToOne
-//    @JsonIgnore
-//    @JoinColumn(name = "odontologo_id", nullable = false)
-//    private Odontologo odontologo;
-//    @ManyToOne
-//    @JsonIgnore
-//    @JoinColumn(name = "turno_id", nullable = false)
-//    private Turno turno;
 
     public Paciente() {
     }
@@ -56,16 +48,6 @@ public class Paciente {
         this.turnos = turnos;
     }
 
-    //    public Paciente(Long id, String nombre, String apellido, Domicilio domicilio, String dni, LocalDate fechaIngreso, Odontologo odontologo, Turno turno) {
-//        this.id = id;
-//        this.nombre = nombre;
-//        this.apellido = apellido;
-//        this.domicilio = domicilio;
-//        this.dni = dni;
-//        this.fechaIngreso = fechaIngreso;
-//        this.odontologo = odontologo;
-//        this.turno = turno;
-//    }
 
     public Long getId() {
         return id;
@@ -115,19 +97,5 @@ public class Paciente {
         this.fechaIngreso = fechaIngreso;
     }
 
-//    public Odontologo getOdontologo() {
-//        return odontologo;
-//    }
 
-//    public void setOdontologo(Odontologo odontologo) {
-//        this.odontologo = odontologo;
-//    }
-//
-//    public Turno getTurno() {
-//        return turno;
-//    }
-//
-//    public void setTurno(Turno turno) {
-//        this.turno = turno;
-//    }
 }
