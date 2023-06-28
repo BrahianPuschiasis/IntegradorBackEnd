@@ -1,21 +1,17 @@
 window.addEventListener('load', function () {
-  // Al cargar la página buscamos y obtenemos el formulario donde estarán
-  // los datos que el usuario cargará del nuevo odontólogo
+
   const formulario = document.querySelector('#add_new_odontologo');
 
-  // Ante un submit del formulario se ejecutará la siguiente función
   formulario.addEventListener('submit', function (event) {
     event.preventDefault(); // Prevenir el envío del formulario
 
-    // Creamos un objeto que contendrá los datos del nuevo odontólogo
     const formData = {
       nombre: document.querySelector('#nombre').value,
       apellido: document.querySelector('#apellido').value,
       matricula: document.querySelector('#matricula').value,
     };
 
-    // Invocamos la API odontólogos utilizando la función fetch con el método POST,
-    // enviando los datos del odontólogo en formato JSON
+
     const url = 'http://localhost:8080/odontologo/guardar';
     const settings = {
       method: 'POST',
@@ -28,8 +24,7 @@ window.addEventListener('load', function () {
     fetch(url, settings)
       .then(response => response.json())
       .then(data => {
-        // Si no hay ningún error, se muestra un mensaje diciendo que el odontólogo
-        // se agregó correctamente
+
         let successAlert =
           '<div class="alert alert-success alert-dismissible">' +
           '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
@@ -37,12 +32,10 @@ window.addEventListener('load', function () {
 
         document.querySelector('#response').innerHTML = successAlert;
         document.querySelector('#response').style.display = 'block';
-        // Se dejan todos los campos vacíos por si se quiere ingresar otro odontólogo
         resetUploadForm();
       })
       .catch(error => {
-        // Si hay algún error, se muestra un mensaje diciendo que el odontólogo
-        // no se pudo guardar e intentarlo nuevamente
+
         let errorAlert =
           '<div class="alert alert-danger alert-dismissible">' +
           '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
@@ -50,7 +43,6 @@ window.addEventListener('load', function () {
 
         document.querySelector('#response').innerHTML = errorAlert;
         document.querySelector('#response').style.display = 'block';
-        // Se dejan todos los campos vacíos por si se quiere ingresar otro odontólogo
         resetUploadForm();
       });
   });
