@@ -1,6 +1,7 @@
 package com.ClinicaOdontologica.clinica.controller;
 
 
+import com.ClinicaOdontologica.clinica.model.dto.OdontologoDTO;
 import com.ClinicaOdontologica.clinica.model.entity.Odontologo;
 import com.ClinicaOdontologica.clinica.service.OdontologoService;
 import com.ClinicaOdontologica.clinica.service.interfaces.IOdontologoService;
@@ -26,7 +27,7 @@ public class OdontologoController {
 //    private static final Logger logger = Logger.getLogger(String.valueOf(OdontologoController.class));
 
     @GetMapping
-    public Collection<Odontologo> traerOdontologos() {
+    public Collection<OdontologoDTO> traerOdontologos() {
         return odontologoService.traerTodos();
     }
 

@@ -1,13 +1,15 @@
 package com.ClinicaOdontologica.clinica.service;
 
+import com.ClinicaOdontologica.clinica.model.dto.OdontologoDTO;
 import com.ClinicaOdontologica.clinica.model.entity.Odontologo;
 import com.ClinicaOdontologica.clinica.repository.IOdontologoRepository;
 import com.ClinicaOdontologica.clinica.service.interfaces.IOdontologoService;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Collection;
-import java.util.Optional;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 public class OdontologoService implements IOdontologoService {
@@ -15,11 +17,27 @@ public class OdontologoService implements IOdontologoService {
     @Autowired
     IOdontologoRepository iOdontologoRepository;
 
-    @Override
-    public Collection<Odontologo> traerTodos() {
-        return iOdontologoRepository.findAll();
+    @Autowired
+    ObjectMapper mapper;
 
+//    @Override
+//    public Collection<OdontologoDTO> traerTodos() {
+//        return iOdontologoRepository.findAll();
+//
+//    }
+
+    @Override
+    public Collection<OdontologoDTO> traerTodos() {
+        Collection<Odontologo> allOdontologos = iOdontologoRepository.findAll();
+        Set<OdontologoDTO> allOdontologosDTO = allOdontologos.stream()
+                .map(odontologo -> mapper.convertValue(odontologo, OdontologoDTO.class))
+                .sorted(Comparator.comparingLong(OdontologoDTO::getId))
+                .collect(Collectors.toCollection(LinkedHashSet::new));
+
+        return allOdontologosDTO;
     }
+
+
 
     @Override
     public Odontologo obtenerOdontologoPorId(Long id) {

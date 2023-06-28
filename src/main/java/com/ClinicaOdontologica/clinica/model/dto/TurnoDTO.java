@@ -13,4 +13,27 @@ public class TurnoDTO {
     private Paciente paciente;
     private LocalDateTime fechaHora;
 
+    public Odontologo getOdontologo() {
+        return odontologo;
+    }
+
+    public void setOdontologo(Odontologo odontologo) {
+        this.odontologo = odontologo;
+    }
+
+    public Paciente getPaciente() {
+        return paciente;
+    }
+
+    public void setPaciente(Paciente paciente) {
+        this.paciente = paciente;
+    }
+
+    public LocalDateTime getFechaHora() {
+        return fechaHora;
+    }
+
+    public void setFechaHora(LocalDateTime fechaHora) {
+        this.fechaHora = fechaHora;
+    }
 }
