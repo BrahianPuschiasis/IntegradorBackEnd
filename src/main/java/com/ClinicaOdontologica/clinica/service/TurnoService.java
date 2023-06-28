@@ -5,6 +5,7 @@ import com.ClinicaOdontologica.clinica.model.entity.Odontologo;
 import com.ClinicaOdontologica.clinica.model.entity.Paciente;
 import com.ClinicaOdontologica.clinica.model.entity.Turno;
 import com.ClinicaOdontologica.clinica.repository.ITurnoRepository;
+import com.ClinicaOdontologica.clinica.service.interfaces.ITurnoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +14,7 @@ import java.util.Collection;
 import java.util.Optional;
 
 @Service
-public class TurnoService {
+public class TurnoService implements ITurnoService {
 
     @Autowired
     ITurnoRepository iTurnoRepository;
@@ -22,20 +23,22 @@ public class TurnoService {
     @Autowired
     PacienteService pacienteService;
 
+    @Override
     public Collection<Turno> traerTodos() {
         return iTurnoRepository.findAll();
 
     }
 
+    @Override
     public void crearTurno(Turno turno) {
         iTurnoRepository.save(turno);
 
     }
-
+    @Override
     public void modificarTurno(Turno turno) {
         iTurnoRepository.save(turno);
     }
-
+    @Override
     public void eliminarTurno(Long id) {
         Optional<Turno> turnoOptional = iTurnoRepository.findById(id);
         if (turnoOptional.isPresent()) {
@@ -45,7 +48,7 @@ public class TurnoService {
             throw new RuntimeException("No se encontró el turno con ID: " + id);
         }
     }
-
+    @Override
     public Turno obtenerTurnoPorId(Long id) {
         Optional<Turno> turnoOptional = iTurnoRepository.findById(id);
         return turnoOptional.orElseThrow(() -> new RuntimeException("No se encontró el turno con ID: " + id));

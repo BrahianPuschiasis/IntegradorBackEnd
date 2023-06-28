@@ -2,6 +2,8 @@ package com.ClinicaOdontologica.clinica.controller;
 
 import com.ClinicaOdontologica.clinica.model.entity.Turno;
 import com.ClinicaOdontologica.clinica.service.TurnoService;
+import com.ClinicaOdontologica.clinica.service.interfaces.IPacienteService;
+import com.ClinicaOdontologica.clinica.service.interfaces.ITurnoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,9 +17,12 @@ import java.util.Collection;
 public class TurnoController {
 
 
-    @Autowired
-    private TurnoService turnoService;
+//    @Autowired
+//    private TurnoService turnoService;
 
+
+    @Autowired
+    ITurnoService turnoService;
     @GetMapping
     public Collection<Turno> traerPacientes() {
         return turnoService.traerTodos();

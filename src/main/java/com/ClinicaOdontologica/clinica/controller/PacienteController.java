@@ -2,6 +2,8 @@ package com.ClinicaOdontologica.clinica.controller;
 
 import com.ClinicaOdontologica.clinica.model.entity.Paciente;
 import com.ClinicaOdontologica.clinica.service.PacienteService;
+import com.ClinicaOdontologica.clinica.service.interfaces.IOdontologoService;
+import com.ClinicaOdontologica.clinica.service.interfaces.IPacienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,8 +16,11 @@ import java.util.Collection;
 @CrossOrigin(origins = "http://localhost:63342")
 public class PacienteController {
 
+//    @Autowired
+//    private PacienteService pacienteService;
+
     @Autowired
-    private PacienteService pacienteService;
+    IPacienteService pacienteService;
 
     @GetMapping
     public Collection<Paciente> traerPacientes() {

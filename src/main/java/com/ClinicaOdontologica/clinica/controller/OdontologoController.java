@@ -3,6 +3,7 @@ package com.ClinicaOdontologica.clinica.controller;
 
 import com.ClinicaOdontologica.clinica.model.entity.Odontologo;
 import com.ClinicaOdontologica.clinica.service.OdontologoService;
+import com.ClinicaOdontologica.clinica.service.interfaces.IOdontologoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,8 +16,12 @@ import java.util.Collection;
 //@CrossOrigin(origins = "http://localhost:63342")
 public class OdontologoController {
 
+//    @Autowired
+//    private OdontologoService odontologoService;
+
     @Autowired
-    private OdontologoService odontologoService;
+    IOdontologoService odontologoService;
+
 
 //    private static final Logger logger = Logger.getLogger(String.valueOf(OdontologoController.class));
 
