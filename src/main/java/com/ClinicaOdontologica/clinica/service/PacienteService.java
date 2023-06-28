@@ -3,6 +3,7 @@ package com.ClinicaOdontologica.clinica.service;
 import com.ClinicaOdontologica.clinica.model.entity.Domicilio;
 import com.ClinicaOdontologica.clinica.model.entity.Paciente;
 import com.ClinicaOdontologica.clinica.repository.IPacienteRepository;
+import com.ClinicaOdontologica.clinica.service.interfaces.IPacienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +12,7 @@ import java.util.Collection;
 import java.util.Optional;
 
 @Service
-public class PacienteService {
+public class PacienteService implements IPacienteService {
 
     @Autowired
     IPacienteRepository iPacienteRepository;
@@ -24,21 +25,23 @@ public class PacienteService {
 
     @Autowired
     TurnoService turnoService;
-
+    @Override
     public Collection<Paciente> traerTodos() {
         return iPacienteRepository.findAll();
 
     }
 
-    public Paciente crearPaciente(Paciente paciente) {
-     return iPacienteRepository.save(paciente);
+    @Override
+    public void crearPaciente(Paciente paciente) {
+      iPacienteRepository.save(paciente);
 
     }
-
-    public Paciente modificarPaciente(Paciente paciente) {
-        return iPacienteRepository.save(paciente);
+    @Override
+    public void modificarPaciente(Paciente paciente) {
+         iPacienteRepository.save(paciente);
     }
 
+    @Override
     public void eliminarPaciente(Long id) {
         Optional<Paciente> pacienteOptional = iPacienteRepository.findById(id);
         if (pacienteOptional.isPresent()) {
@@ -48,7 +51,7 @@ public class PacienteService {
             throw new RuntimeException("No se encontró el paciente con ID: " + id);
         }
     }
-
+    @Override
     public Paciente obtenerPacientePorId(Long id) {
         Optional<Paciente> pacienteOptional = iPacienteRepository.findById(id);
         return pacienteOptional.orElseThrow(() -> new RuntimeException("No se encontró el paciente con ID: " + id));

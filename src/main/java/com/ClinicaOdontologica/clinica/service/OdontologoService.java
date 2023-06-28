@@ -1,41 +1,42 @@
 package com.ClinicaOdontologica.clinica.service;
 
 import com.ClinicaOdontologica.clinica.model.entity.Odontologo;
-import com.ClinicaOdontologica.clinica.model.entity.Paciente;
 import com.ClinicaOdontologica.clinica.repository.IOdontologoRepository;
+import com.ClinicaOdontologica.clinica.service.interfaces.IOdontologoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 import java.util.Optional;
 
 @Service
-public class OdontologoService {
+public class OdontologoService implements IOdontologoService {
 
     @Autowired
     IOdontologoRepository iOdontologoRepository;
 
+    @Override
     public Collection<Odontologo> traerTodos() {
         return iOdontologoRepository.findAll();
 
     }
 
-
+    @Override
     public Odontologo obtenerOdontologoPorId(Long id) {
         Optional<Odontologo> odontologoOptional = iOdontologoRepository.findById(id);
         return odontologoOptional.orElseThrow(() -> new RuntimeException("No se encontró el odontólogo con ID: " + id));
     }
+    @Override
     public void crearOdontologo(Odontologo odontologo) {
         iOdontologoRepository.save(odontologo);
 
     }
-
+    @Override
     public void modificarOdontologo(Odontologo odontologo) {
         iOdontologoRepository.save(odontologo);
     }
 
+    @Override
     public void eliminarOdontologo(Long id) {
         Optional<Odontologo> odontologoOptional = iOdontologoRepository.findById(id);
         if (odontologoOptional.isPresent()) {
@@ -45,6 +46,8 @@ public class OdontologoService {
             throw new RuntimeException("No se encontró el odontólogo con ID: " + id);
         }
     }
+
+
 
     public void cargarDatosDePrueba() {
 

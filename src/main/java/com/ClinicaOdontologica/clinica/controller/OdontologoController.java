@@ -22,7 +22,6 @@ public class OdontologoController {
 
     @GetMapping
     public Collection<Odontologo> traerOdontologos() {
-        //Collection<Odontologo> odontologos = odontologoService.traerTodos();
         return odontologoService.traerTodos();
     }
 
