@@ -13,12 +13,7 @@ import java.util.Collection;
 
 @RestController
 @RequestMapping("/turno")
-@CrossOrigin(origins = "http://localhost:63342")
 public class TurnoController {
-
-
-//    @Autowired
-//    private TurnoService turnoService;
 
 
     @Autowired

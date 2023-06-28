@@ -20,11 +20,6 @@ public class OdontologoService implements IOdontologoService {
     @Autowired
     ObjectMapper mapper;
 
-//    @Override
-//    public Collection<OdontologoDTO> traerTodos() {
-//        return iOdontologoRepository.findAll();
-//
-//    }
 
     @Override
     public Collection<OdontologoDTO> traerTodos() {

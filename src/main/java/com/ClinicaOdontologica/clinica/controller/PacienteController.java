@@ -13,11 +13,7 @@ import java.util.Collection;
 
 @RestController
 @RequestMapping("/paciente")
-@CrossOrigin(origins = "http://localhost:63342")
 public class PacienteController {
-
-//    @Autowired
-//    private PacienteService pacienteService;
 
     @Autowired
     IPacienteService pacienteService;
