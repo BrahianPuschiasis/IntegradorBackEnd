@@ -1,7 +1,7 @@
 window.addEventListener('load', function () {
   (function () {
 
-    const url = 'http://localhost:8080/paciente';
+    const url = '/paciente';
     const settings = {
       method: 'GET'
     };

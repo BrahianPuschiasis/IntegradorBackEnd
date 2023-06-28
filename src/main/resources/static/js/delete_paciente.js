@@ -1,7 +1,7 @@
 function deleteBy(id)
 {
 
-          const url = 'http://localhost:8080/paciente/eliminar/'+ id;
+          const url = '/paciente/eliminar/'+ id;
           const settings = {
               method: 'DELETE'
           }

@@ -15,7 +15,7 @@ window.addEventListener('load', function () {
      }
     };
 
-    const url = 'http://localhost:8080/paciente/actualizar';
+    const url = '/paciente/actualizar';
     const settings = {
       method: 'PUT',
       headers: {
@@ -30,7 +30,7 @@ window.addEventListener('load', function () {
  })
 
 function findBy(id) {
-  const url = 'http://localhost:8080/paciente/buscar/' + id;
+  const url = '/paciente/buscar/' + id;
   const settings = {
     method: 'GET'
   };

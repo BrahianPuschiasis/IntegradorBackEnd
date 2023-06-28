@@ -1,7 +1,7 @@
 function deleteBy(id)
 {
 
-          const url = 'http://localhost:8080/odontologo/eliminar/'+ id;
+          const url = '/odontologo/eliminar/'+ id;
           const settings = {
               method: 'DELETE'
           }

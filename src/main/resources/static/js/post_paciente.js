@@ -14,7 +14,7 @@ window.addEventListener('load', function () {
       }
     };
 
-    const url = 'http://localhost:8080/paciente/guardar';
+    const url = '/paciente/guardar';
     const settings = {
       method: 'POST',
       headers: {

@@ -16,7 +16,7 @@ import java.util.logging.Logger;
 
 @RestController
 @RequestMapping("/odontologo")
-@CrossOrigin(origins = "http://localhost:63342")
+//@CrossOrigin(origins = "http://localhost:63342")
 public class OdontologoController {
 
     @Autowired

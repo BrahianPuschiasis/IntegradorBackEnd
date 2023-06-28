@@ -1,7 +1,7 @@
 window.addEventListener('load', function () {
   (function () {
 
-    const url = 'http://localhost:8080/turno';
+    const url = '/turno';
     const settings = {
       method: 'GET'
     };

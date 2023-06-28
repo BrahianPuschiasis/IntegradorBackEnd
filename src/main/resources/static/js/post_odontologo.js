@@ -12,7 +12,7 @@ window.addEventListener('load', function () {
     };
 
 
-    const url = 'http://localhost:8080/odontologo/guardar';
+    const url = '/odontologo/guardar';
     const settings = {
       method: 'POST',
       headers: {

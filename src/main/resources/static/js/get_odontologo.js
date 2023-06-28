@@ -1,7 +1,7 @@
 window.addEventListener('load', function () {
   (function () {
 
-    const url = 'http://localhost:8080/odontologo';
+    const url = '/odontologo';
     const settings = {
       method: 'GET'
     };
