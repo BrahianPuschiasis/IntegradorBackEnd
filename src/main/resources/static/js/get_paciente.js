@@ -40,19 +40,19 @@ window.addEventListener('load', function () {
             '<td>' +
             updateButton +
             '</td>' +
-            '<td class="td_first_name">' +
+            '<td class="td_nombre">' +
             paciente.nombre.toUpperCase() +
             '</td>' +
-            '<td class="td_last_name">' +
+            '<td class="td_apellido">' +
             paciente.apellido.toUpperCase() +
             '</td>' +
-            '<td class="td_last_name">' +
+            '<td class="td_dni">' +
             paciente.dni.toUpperCase() +
             '</td>' +
-            '<td class="td_last_name">' +
+            '<td class="td_fechaIngreso">' +
             paciente.fechaIngreso.toUpperCase() +
             '</td>' +
-             '<td class="td_last_name">' +
+             '<td class="td_domicilioID">' +
              paciente.domicilio.id + // Agrega el ID del domicilio aquí
              '</td>' +
             '<td>' +

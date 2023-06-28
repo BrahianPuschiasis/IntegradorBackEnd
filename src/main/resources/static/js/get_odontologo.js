@@ -40,13 +40,13 @@ window.addEventListener('load', function () {
             '<td>' +
             updateButton +
             '</td>' +
-            '<td class="td_first_name">' +
+            '<td class="td_nombre">' +
             odontologo.nombre.toUpperCase() +
             '</td>' +
-            '<td class="td_last_name">' +
+            '<td class="td_apellido">' +
             odontologo.apellido.toUpperCase() +
             '</td>' +
-            '<td class="td_last_name">' +
+            '<td class="td_matricula">' +
             odontologo.matricula.toUpperCase() +
             '</td>' +
             '<td>' +

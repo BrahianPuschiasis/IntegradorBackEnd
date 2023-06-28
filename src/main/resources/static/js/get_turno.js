@@ -39,13 +39,13 @@ window.addEventListener('load', function () {
             '<td>' +
             updateButton +
             '</td>' +
-            '<td class="td_last_name">' +
+            '<td class="td_paciente">' +
              turno.paciente.id +
             '</td>' +
-            '<td class="td_last_name">' +
+            '<td class="td_odontologo">' +
              turno.odontologo.id +
             '</td>' +
-            '<td class="td_last_name">' +
+            '<td class="td_fechaHora">' +
             turno.fechaHora +
             '</td>' +
             '<td>' +
