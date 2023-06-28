@@ -1,14 +1,9 @@
-package com.ClinicaOdontologica.clinica.entity;
+package com.ClinicaOdontologica.clinica.model.entity;
 
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.util.Date;
-import java.util.List;
 
 @Entity
 public class Turno {

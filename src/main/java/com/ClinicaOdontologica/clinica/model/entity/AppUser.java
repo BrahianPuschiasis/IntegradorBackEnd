@@ -1,4 +1,4 @@
-package com.ClinicaOdontologica.clinica.entity;
+package com.ClinicaOdontologica.clinica.model.entity;
 
 import jakarta.persistence.*;
 import org.springframework.security.core.GrantedAuthority;

@@ -1,17 +1,13 @@
 package com.ClinicaOdontologica.clinica.service;
 
-import com.ClinicaOdontologica.clinica.entity.Domicilio;
-import com.ClinicaOdontologica.clinica.entity.Odontologo;
-import com.ClinicaOdontologica.clinica.entity.Paciente;
-import com.ClinicaOdontologica.clinica.entity.Turno;
-import com.ClinicaOdontologica.clinica.repository.IOdontologoRepository;
+import com.ClinicaOdontologica.clinica.model.entity.Domicilio;
+import com.ClinicaOdontologica.clinica.model.entity.Paciente;
 import com.ClinicaOdontologica.clinica.repository.IPacienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.Collection;
-import java.util.List;
 import java.util.Optional;
 
 @Service

@@ -1,9 +1,7 @@
 package com.ClinicaOdontologica.clinica.service;
 
-import com.ClinicaOdontologica.clinica.entity.Domicilio;
-import com.ClinicaOdontologica.clinica.entity.Turno;
+import com.ClinicaOdontologica.clinica.model.entity.Domicilio;
 import com.ClinicaOdontologica.clinica.repository.IDomicilioRepository;
-import com.ClinicaOdontologica.clinica.repository.ITurnoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

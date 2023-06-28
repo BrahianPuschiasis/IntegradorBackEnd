@@ -1,7 +1,7 @@
 package com.ClinicaOdontologica.clinica.repository;
 
 
-import com.ClinicaOdontologica.clinica.entity.Turno;
+import com.ClinicaOdontologica.clinica.model.entity.Turno;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

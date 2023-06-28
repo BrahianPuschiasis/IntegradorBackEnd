@@ -1,12 +1,10 @@
-package com.ClinicaOdontologica.clinica.entity;
+package com.ClinicaOdontologica.clinica.model.entity;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.Set;
 
 @Entity

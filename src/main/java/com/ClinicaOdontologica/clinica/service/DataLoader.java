@@ -1,7 +1,7 @@
 package com.ClinicaOdontologica.clinica.service;
 
-import com.ClinicaOdontologica.clinica.entity.AppUser;
-import com.ClinicaOdontologica.clinica.entity.AppUserRole;
+import com.ClinicaOdontologica.clinica.model.entity.AppUser;
+import com.ClinicaOdontologica.clinica.model.entity.AppUserRole;
 import com.ClinicaOdontologica.clinica.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;

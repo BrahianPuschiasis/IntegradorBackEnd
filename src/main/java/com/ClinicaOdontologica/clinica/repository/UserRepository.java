@@ -1,6 +1,6 @@
 package com.ClinicaOdontologica.clinica.repository;
 
-import com.ClinicaOdontologica.clinica.entity.AppUser;
+import com.ClinicaOdontologica.clinica.model.entity.AppUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;

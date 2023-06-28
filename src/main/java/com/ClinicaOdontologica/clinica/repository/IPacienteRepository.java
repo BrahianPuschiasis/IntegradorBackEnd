@@ -1,8 +1,6 @@
 package com.ClinicaOdontologica.clinica.repository;
 
-import com.ClinicaOdontologica.clinica.entity.Paciente;
-import com.ClinicaOdontologica.clinica.service.PacienteService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.ClinicaOdontologica.clinica.model.entity.Paciente;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
