@@ -2,6 +2,7 @@ package com.ClinicaOdontologica.clinica.service;
 
 import com.ClinicaOdontologica.clinica.model.entity.Domicilio;
 import com.ClinicaOdontologica.clinica.repository.IDomicilioRepository;
+import com.ClinicaOdontologica.clinica.service.interfaces.IDomicilioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,25 +10,27 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class DomicilioService {
+public class DomicilioService implements IDomicilioService {
 
     @Autowired
     IDomicilioRepository iDomicilioRepository;
 
+    @Override
     public List<Domicilio> traerTodos() {
         return iDomicilioRepository.findAll();
 
     }
 
+    @Override
     public void crearDomicilio(Domicilio domicilio) {
         iDomicilioRepository.save(domicilio);
 
     }
-
+    @Override
     public void modificarDomicilio(Domicilio domicilio) {
         iDomicilioRepository.save(domicilio);
     }
-
+    @Override
     public void eliminarDomicilio(Long id) {
         iDomicilioRepository.deleteById(id);
     }
@@ -68,6 +71,8 @@ public class DomicilioService {
         domicilio5.setProvincia("Provincia 5");
         iDomicilioRepository.save(domicilio5);
     }
+
+    @Override
     public Domicilio obtenerDomicilioPorId(Long id) {
         Optional<Domicilio> domicilioOptional = iDomicilioRepository.findById(id);
         return domicilioOptional.orElseThrow(() -> new RuntimeException("No se encontró el domicilio con ID: " + id));
