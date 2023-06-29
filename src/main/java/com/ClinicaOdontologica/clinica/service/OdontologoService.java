@@ -5,6 +5,8 @@ import com.ClinicaOdontologica.clinica.model.entity.Odontologo;
 import com.ClinicaOdontologica.clinica.repository.IOdontologoRepository;
 import com.ClinicaOdontologica.clinica.service.impl.IOdontologoService;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +15,7 @@ import java.util.stream.Collectors;
 
 @Service
 public class OdontologoService implements IOdontologoService {
+    private static final Logger logger = Logger.getLogger(OdontologoService.class);
 
     @Autowired
     IOdontologoRepository iOdontologoRepository;
@@ -23,13 +26,20 @@ public class OdontologoService implements IOdontologoService {
 
     @Override
     public Collection<OdontologoDTO> traerTodos() {
-        Collection<Odontologo> allOdontologos = iOdontologoRepository.findAll();
-        Set<OdontologoDTO> allOdontologosDTO = allOdontologos.stream()
-                .map(odontologo -> mapper.convertValue(odontologo, OdontologoDTO.class))
-                .sorted(Comparator.comparingLong(OdontologoDTO::getId))
-                .collect(Collectors.toCollection(LinkedHashSet::new));
+        try {
+            Collection<Odontologo> allOdontologos = iOdontologoRepository.findAll();
+            Set<OdontologoDTO> allOdontologosDTO = allOdontologos.stream()
+                    .map(odontologo -> mapper.convertValue(odontologo, OdontologoDTO.class))
+                    .sorted(Comparator.comparingLong(OdontologoDTO::getId))
+                    .collect(Collectors.toCollection(LinkedHashSet::new));
 
-        return allOdontologosDTO;
+            logger.info("La lista de odontólogos se trajo correctamente");
+
+            return allOdontologosDTO;
+        } catch (Exception ex) {
+            logger.error("No se pudo traer la lista de odontólogos", ex);
+            throw new RuntimeException("Error al traer la lista de odontólogos", ex);
+        }
     }
 
 

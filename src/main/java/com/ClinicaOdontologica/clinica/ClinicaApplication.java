@@ -21,6 +21,9 @@ public class ClinicaApplication {
 		//para acceder a la aplicacion basta con poner en el navegador "http://localhost:8080/", si se accede directamente a los html en Static
 		//no va a funcionar, lo pude hacer andar asi con una anotacion pero preferi dejarlo por localhost8080
 
+		//los logs estan en resources, iba a crearle un package "logs" pero no estaba seguro si estaba bien
+
+
 		ApplicationContext context = SpringApplication.run(ClinicaApplication.class, args);
 
 		OdontologoService odontologoService = context.getBean(OdontologoService.class);

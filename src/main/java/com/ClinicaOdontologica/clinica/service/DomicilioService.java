@@ -3,23 +3,37 @@ package com.ClinicaOdontologica.clinica.service;
 import com.ClinicaOdontologica.clinica.model.entity.Domicilio;
 import com.ClinicaOdontologica.clinica.repository.IDomicilioRepository;
 import com.ClinicaOdontologica.clinica.service.impl.IDomicilioService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.apache.log4j.Logger;
 
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
 @Service
 public class DomicilioService implements IDomicilioService {
 
+   private static final Logger logger = Logger.getLogger(DomicilioService.class);
+
     @Autowired
     IDomicilioRepository iDomicilioRepository;
 
+
+
     @Override
     public List<Domicilio> traerTodos() {
-        return iDomicilioRepository.findAll();
-
+        try {
+            List<Domicilio> domicilios = iDomicilioRepository.findAll();
+            logger.info("La lista de domicilios se trajo correctamente");
+            return domicilios;
+        } catch (Exception ex) {
+            logger.error("No se pudo traer la lista de domicilios", ex);
+            throw new RuntimeException("Error al traer la lista de domicilios", ex);
+        }
     }
+
 
     @Override
     public void crearDomicilio(Domicilio domicilio) {
