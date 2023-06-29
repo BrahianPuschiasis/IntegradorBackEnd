@@ -1,4 +1,4 @@
-package com.ClinicaOdontologica.clinica.service.interfaces;
+package com.ClinicaOdontologica.clinica.service.impl;
 
 import com.ClinicaOdontologica.clinica.model.dto.OdontologoDTO;
 import com.ClinicaOdontologica.clinica.model.entity.Odontologo;

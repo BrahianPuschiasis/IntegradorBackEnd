@@ -3,8 +3,7 @@ package com.ClinicaOdontologica.clinica.controller;
 
 import com.ClinicaOdontologica.clinica.model.dto.OdontologoDTO;
 import com.ClinicaOdontologica.clinica.model.entity.Odontologo;
-import com.ClinicaOdontologica.clinica.service.OdontologoService;
-import com.ClinicaOdontologica.clinica.service.interfaces.IOdontologoService;
+import com.ClinicaOdontologica.clinica.service.impl.IOdontologoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

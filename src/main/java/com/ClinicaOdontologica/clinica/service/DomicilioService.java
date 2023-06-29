@@ -2,7 +2,7 @@ package com.ClinicaOdontologica.clinica.service;
 
 import com.ClinicaOdontologica.clinica.model.entity.Domicilio;
 import com.ClinicaOdontologica.clinica.repository.IDomicilioRepository;
-import com.ClinicaOdontologica.clinica.service.interfaces.IDomicilioService;
+import com.ClinicaOdontologica.clinica.service.impl.IDomicilioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

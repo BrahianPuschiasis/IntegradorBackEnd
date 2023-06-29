@@ -5,7 +5,7 @@ import com.ClinicaOdontologica.clinica.model.entity.Odontologo;
 import com.ClinicaOdontologica.clinica.model.entity.Paciente;
 import com.ClinicaOdontologica.clinica.model.entity.Turno;
 import com.ClinicaOdontologica.clinica.repository.ITurnoRepository;
-import com.ClinicaOdontologica.clinica.service.interfaces.ITurnoService;
+import com.ClinicaOdontologica.clinica.service.impl.ITurnoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

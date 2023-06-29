@@ -3,7 +3,7 @@ package com.ClinicaOdontologica.clinica.service;
 import com.ClinicaOdontologica.clinica.model.dto.OdontologoDTO;
 import com.ClinicaOdontologica.clinica.model.entity.Odontologo;
 import com.ClinicaOdontologica.clinica.repository.IOdontologoRepository;
-import com.ClinicaOdontologica.clinica.service.interfaces.IOdontologoService;
+import com.ClinicaOdontologica.clinica.service.impl.IOdontologoService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
