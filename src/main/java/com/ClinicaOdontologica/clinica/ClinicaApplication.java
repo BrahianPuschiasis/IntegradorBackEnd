@@ -12,6 +12,15 @@ import org.springframework.context.ApplicationContext;
 public class ClinicaApplication {
 
 	public static void main(String[] args) {
+
+		//https://github.com/BrahianPuschiasis/IntegradorBackEnd
+		//demore en implementar log4j, e incluso github pero estan practicamente todos los commit/uploads de las cosas mas importantes
+
+		//uso cargarDatosDePrueba para cada entidad, asi no comienza de cero y es más facil visualizarlo/navegar, funciona el BAM al 100%
+		//tanto en front como por postman/base de datos, las credenciales del login estan en DataLoader, con un user y admin
+		//para acceder a la aplicacion basta con poner en el navegador "http://localhost:8080/", si se accede directamente a los html en Static
+		//no va a funcionar, lo pude hacer andar asi con una anotacion pero preferi dejarlo por localhost8080
+
 		ApplicationContext context = SpringApplication.run(ClinicaApplication.class, args);
 
 		OdontologoService odontologoService = context.getBean(OdontologoService.class);
