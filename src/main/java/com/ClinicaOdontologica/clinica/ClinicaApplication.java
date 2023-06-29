@@ -14,6 +14,7 @@ public class ClinicaApplication {
 	public static void main(String[] args) {
 
 		//https://github.com/BrahianPuschiasis/IntegradorBackEnd
+
 		//demore en implementar log4j, e incluso github pero estan practicamente todos los commit/uploads de las cosas mas importantes
 
 		//uso cargarDatosDePrueba para cada entidad, asi no comienza de cero y es más facil visualizarlo/navegar, funciona el BAM al 100%
@@ -21,9 +22,9 @@ public class ClinicaApplication {
 		//para acceder a la aplicacion basta con poner en el navegador "http://localhost:8080/", si se accede directamente a los html en Static
 		//no va a funcionar, lo pude hacer andar asi con una anotacion pero preferi dejarlo por localhost8080
 
-		//los logs estan en resources, iba a crearle un package "logs" pero no estaba seguro si estaba bien, solo implemente en OdontoologoService
-		//dado que se dijo que bastaba con usarlo en un lugar (lo mismo para dto, lo use en la lista de odontologo)
-		//use exepciones tambien para usar log4j en odontologoService
+		//los logs estan en resources, iba a crearle un package "logs" pero no estaba seguro si estaba bien, esta implementado en los services
+		// de turno odontologo, domicilio y paciente, en dto solo use para listar en odontologo para que se entienda que se usarlo, como se dijo
+		//que no era necesario y en caso de hacerlo que sea en listar nomas hice eso
 
 		ApplicationContext context = SpringApplication.run(ClinicaApplication.class, args);
 

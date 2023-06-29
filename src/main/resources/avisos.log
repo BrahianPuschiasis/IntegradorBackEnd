@@ -746,3 +746,40 @@ Caused by: jakarta.persistence.EntityNotFoundException: Unable to find com.Clini
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
 	... 98 more
+[2023-06-29 13:29:20] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Juan Pérez
+[2023-06-29 13:29:20] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: María López
+[2023-06-29 13:29:20] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Laura Gómez
+[2023-06-29 13:29:20] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Carlos Martínez
+[2023-06-29 13:29:20] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Ana Fernández
+[2023-06-29 13:29:20] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 1
+[2023-06-29 13:29:20] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 2
+[2023-06-29 13:29:20] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 3
+[2023-06-29 13:29:20] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 4
+[2023-06-29 13:29:20] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 5
+[2023-06-29 13:29:20] [ INFO ] [OdontologoService:138] Se cargaron correctamente los datos de prueba
+[2023-06-29 13:29:20] [ INFO ] [DomicilioService:78] Se creó correctamente el domicilio con ID: 1
+[2023-06-29 13:29:20] [ INFO ] [DomicilioService:86] Se creó correctamente el domicilio con ID: 2
+[2023-06-29 13:29:20] [ INFO ] [DomicilioService:94] Se creó correctamente el domicilio con ID: 3
+[2023-06-29 13:29:20] [ INFO ] [DomicilioService:102] Se creó correctamente el domicilio con ID: 4
+[2023-06-29 13:29:20] [ INFO ] [DomicilioService:110] Se creó correctamente el domicilio con ID: 5
+[2023-06-29 13:29:20] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Juan Pérez
+[2023-06-29 13:29:20] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: María López
+[2023-06-29 13:29:20] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Laura Gómez
+[2023-06-29 13:29:20] [ INFO ] [PacienteService:129] Se cargaron correctamente los datos de prueba para pacientes
+[2023-06-29 13:29:20] [ INFO ] [TurnoService:104] Se creó correctamente el turno con ID: 1
+[2023-06-29 13:29:20] [ INFO ] [TurnoService:111] Se creó correctamente el turno con ID: 2
+[2023-06-29 13:29:20] [ INFO ] [TurnoService:118] Se creó correctamente el turno con ID: 3
+[2023-06-29 13:29:20] [ INFO ] [TurnoService:125] Se creó correctamente el turno con ID: 4
+[2023-06-29 13:29:20] [ INFO ] [TurnoService:132] Se creó correctamente el turno con ID: 5
+[2023-06-29 13:29:33] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-29 13:29:35] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 1
+[2023-06-29 13:29:35] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-29 13:29:36] [ INFO ] [OdontologoService:90] Se eliminó correctamente el odontólogo con ID: 2
+[2023-06-29 13:29:41] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Brahian Puschiasis
+[2023-06-29 13:29:42] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-29 13:29:48] [ INFO ] [PacienteService:58] Se modificó correctamente el paciente con ID: 3
+[2023-06-29 13:29:56] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: 29381477 123
+[2023-06-29 13:30:00] [ INFO ] [PacienteService:72] Se eliminó correctamente el paciente con ID: 4
+[2023-06-29 13:30:04] [ INFO ] [TurnoService:54] Se modificó correctamente el turno con ID: 1
+[2023-06-29 13:30:06] [ INFO ] [TurnoService:68] Se eliminó correctamente el turno con ID: 5
+[2023-06-29 13:30:09] [ INFO ] [TurnoService:43] Se creó correctamente el turno con ID: 6

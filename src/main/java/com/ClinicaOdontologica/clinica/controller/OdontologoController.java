@@ -18,9 +18,6 @@ public class OdontologoController {
     @Autowired
     IOdontologoService odontologoService;
 
-
-//    private static final Logger logger = Logger.getLogger(String.valueOf(OdontologoController.class));
-
     @GetMapping
     public Collection<OdontologoDTO> traerOdontologos() {
         return odontologoService.traerTodos();
