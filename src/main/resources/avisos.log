@@ -1021,3 +1021,11 @@ insert into turno (fecha_hora,odontologo_id,paciente_id,id) values (?,?,?,?) [23
 [2023-06-30 15:25:13] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
 [2023-06-30 15:25:18] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
 [2023-06-30 15:25:24] [ INFO ] [TurnoService:43] Se creó correctamente el turno con ID: 8
+[2023-06-30 15:46:14] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Daniel Brahian
+[2023-06-30 15:46:14] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 1
+[2023-06-30 15:46:14] [ INFO ] [OdontologoService:90] Se eliminó correctamente el odontólogo con ID: 1
+[2023-06-30 15:46:14] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-30 16:11:32] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Daniel Brahian
+[2023-06-30 16:11:32] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 1
+[2023-06-30 16:11:32] [ INFO ] [OdontologoService:90] Se eliminó correctamente el odontólogo con ID: 1
+[2023-06-30 16:11:32] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
