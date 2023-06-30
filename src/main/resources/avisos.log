@@ -1300,3 +1300,203 @@ insert into turno (fecha_hora,odontologo_id,paciente_id,id) values (?,?,?,?) [23
 [2023-06-30 18:42:45] [ INFO ] [TurnoService:43] Se creó correctamente el turno con ID: 7
 [2023-06-30 18:42:49] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
 [2023-06-30 18:42:50] [ INFO ] [OdontologoService:90] Se eliminó correctamente el odontólogo con ID: 1
+[2023-06-30 19:24:26] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Juan Pérez
+[2023-06-30 19:24:26] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: María López
+[2023-06-30 19:24:26] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Laura Gómez
+[2023-06-30 19:24:26] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Carlos Martínez
+[2023-06-30 19:24:26] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Ana Fernández
+[2023-06-30 19:24:26] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 1
+[2023-06-30 19:24:26] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 2
+[2023-06-30 19:24:26] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 3
+[2023-06-30 19:24:26] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 4
+[2023-06-30 19:24:26] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 5
+[2023-06-30 19:24:26] [ INFO ] [OdontologoService:138] Se cargaron correctamente los datos de prueba
+[2023-06-30 19:24:26] [ INFO ] [DomicilioService:78] Se creó correctamente el domicilio con ID: 1
+[2023-06-30 19:24:26] [ INFO ] [DomicilioService:86] Se creó correctamente el domicilio con ID: 2
+[2023-06-30 19:24:26] [ INFO ] [DomicilioService:94] Se creó correctamente el domicilio con ID: 3
+[2023-06-30 19:24:26] [ INFO ] [DomicilioService:102] Se creó correctamente el domicilio con ID: 4
+[2023-06-30 19:24:26] [ INFO ] [DomicilioService:110] Se creó correctamente el domicilio con ID: 5
+[2023-06-30 19:24:26] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Juan Pérez
+[2023-06-30 19:24:26] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: María López
+[2023-06-30 19:24:26] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Laura Gómez
+[2023-06-30 19:24:26] [ INFO ] [PacienteService:129] Se cargaron correctamente los datos de prueba para pacientes
+[2023-06-30 19:24:26] [ INFO ] [TurnoService:104] Se creó correctamente el turno con ID: 1
+[2023-06-30 19:24:26] [ INFO ] [TurnoService:111] Se creó correctamente el turno con ID: 2
+[2023-06-30 19:24:26] [ INFO ] [TurnoService:118] Se creó correctamente el turno con ID: 3
+[2023-06-30 19:24:26] [ INFO ] [TurnoService:125] Se creó correctamente el turno con ID: 4
+[2023-06-30 19:24:26] [ INFO ] [TurnoService:132] Se creó correctamente el turno con ID: 5
+[2023-06-30 19:24:36] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-30 19:24:40] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 1
+[2023-06-30 19:24:40] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-30 19:24:43] [ INFO ] [OdontologoService:90] Se eliminó correctamente el odontólogo con ID: 2
+[2023-06-30 19:24:45] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-30 19:24:47] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-30 19:24:55] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Alegre Virginia
+[2023-06-30 19:25:10] [ ERROR] [TurnoService:45] No se pudo crear el turno
+org.springframework.dao.DataIntegrityViolationException: could not execute statement [Violación de una restricción de Integridad Referencial: "FKE6NBFHWYMISXJA2FVDUNYRTB: PUBLIC.TURNO FOREIGN KEY(ODONTOLOGO_ID) REFERENCES PUBLIC.ODONTOLOGO(ID) (CAST(2 AS BIGINT))"
+Referential integrity constraint violation: "FKE6NBFHWYMISXJA2FVDUNYRTB: PUBLIC.TURNO FOREIGN KEY(ODONTOLOGO_ID) REFERENCES PUBLIC.ODONTOLOGO(ID) (CAST(2 AS BIGINT))"; SQL statement:
+insert into turno (fecha_hora,odontologo_id,paciente_id,id) values (?,?,?,?) [23506-214]] [insert into turno (fecha_hora,odontologo_id,paciente_id,id) values (?,?,?,?)]; SQL [insert into turno (fecha_hora,odontologo_id,paciente_id,id) values (?,?,?,?)]; constraint [FKE6NBFHWYMISXJA2FVDUNYRTB]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:269)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:229)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:565)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:660)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:410)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:163)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy124.save(Unknown Source)
+	at com.ClinicaOdontologica.clinica.service.TurnoService.crearTurno(TurnoService.java:42)
+	at com.ClinicaOdontologica.clinica.controller.TurnoController.crearPaciente(TurnoController.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:202)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [Violación de una restricción de Integridad Referencial: "FKE6NBFHWYMISXJA2FVDUNYRTB: PUBLIC.TURNO FOREIGN KEY(ODONTOLOGO_ID) REFERENCES PUBLIC.ODONTOLOGO(ID) (CAST(2 AS BIGINT))"
+Referential integrity constraint violation: "FKE6NBFHWYMISXJA2FVDUNYRTB: PUBLIC.TURNO FOREIGN KEY(ODONTOLOGO_ID) REFERENCES PUBLIC.ODONTOLOGO(ID) (CAST(2 AS BIGINT))"; SQL statement:
+insert into turno (fecha_hora,odontologo_id,paciente_id,id) values (?,?,?,?) [23506-214]] [insert into turno (fecha_hora,odontologo_id,paciente_id,id) values (?,?,?,?)]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:60)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:56)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:278)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:108)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:40)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:53)
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.doStaticInserts(InsertCoordinator.java:170)
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.coordinateInsert(InsertCoordinator.java:112)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2670)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:102)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:618)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:489)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:729)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:486)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:358)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1412)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:485)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2296)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1961)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:561)
+	... 105 more
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de una restricción de Integridad Referencial: "FKE6NBFHWYMISXJA2FVDUNYRTB: PUBLIC.TURNO FOREIGN KEY(ODONTOLOGO_ID) REFERENCES PUBLIC.ODONTOLOGO(ID) (CAST(2 AS BIGINT))"
+Referential integrity constraint violation: "FKE6NBFHWYMISXJA2FVDUNYRTB: PUBLIC.TURNO FOREIGN KEY(ODONTOLOGO_ID) REFERENCES PUBLIC.ODONTOLOGO(ID) (CAST(2 AS BIGINT))"; SQL statement:
+insert into turno (fecha_hora,odontologo_id,paciente_id,id) values (?,?,?,?) [23506-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:311)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:252)
+	at org.h2.table.Table.fireConstraints(Table.java:1172)
+	at org.h2.table.Table.fireAfterRow(Table.java:1190)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:275)
+	... 128 more
+[2023-06-30 19:25:15] [ INFO ] [TurnoService:43] Se creó correctamente el turno con ID: 7
+[2023-06-30 19:25:18] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-30 19:25:19] [ INFO ] [OdontologoService:90] Se eliminó correctamente el odontólogo con ID: 1
