@@ -1029,3 +1029,274 @@ insert into turno (fecha_hora,odontologo_id,paciente_id,id) values (?,?,?,?) [23
 [2023-06-30 16:11:32] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 1
 [2023-06-30 16:11:32] [ INFO ] [OdontologoService:90] Se eliminó correctamente el odontólogo con ID: 1
 [2023-06-30 16:11:32] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-30 16:27:58] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Juan Pérez
+[2023-06-30 16:27:58] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: María López
+[2023-06-30 16:27:58] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Laura Gómez
+[2023-06-30 16:27:58] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Carlos Martínez
+[2023-06-30 16:27:58] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Ana Fernández
+[2023-06-30 16:27:58] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 1
+[2023-06-30 16:27:58] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 2
+[2023-06-30 16:27:58] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 3
+[2023-06-30 16:27:58] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 4
+[2023-06-30 16:27:58] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 5
+[2023-06-30 16:27:58] [ INFO ] [OdontologoService:138] Se cargaron correctamente los datos de prueba
+[2023-06-30 16:27:58] [ INFO ] [DomicilioService:78] Se creó correctamente el domicilio con ID: 1
+[2023-06-30 16:27:58] [ INFO ] [DomicilioService:86] Se creó correctamente el domicilio con ID: 2
+[2023-06-30 16:27:58] [ INFO ] [DomicilioService:94] Se creó correctamente el domicilio con ID: 3
+[2023-06-30 16:27:58] [ INFO ] [DomicilioService:102] Se creó correctamente el domicilio con ID: 4
+[2023-06-30 16:27:58] [ INFO ] [DomicilioService:110] Se creó correctamente el domicilio con ID: 5
+[2023-06-30 16:27:58] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Juan Pérez
+[2023-06-30 16:27:58] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: María López
+[2023-06-30 16:27:58] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Laura Gómez
+[2023-06-30 16:27:58] [ INFO ] [PacienteService:129] Se cargaron correctamente los datos de prueba para pacientes
+[2023-06-30 16:27:58] [ INFO ] [TurnoService:104] Se creó correctamente el turno con ID: 1
+[2023-06-30 16:27:58] [ INFO ] [TurnoService:111] Se creó correctamente el turno con ID: 2
+[2023-06-30 16:27:58] [ INFO ] [TurnoService:118] Se creó correctamente el turno con ID: 3
+[2023-06-30 16:27:58] [ INFO ] [TurnoService:125] Se creó correctamente el turno con ID: 4
+[2023-06-30 16:27:58] [ INFO ] [TurnoService:132] Se creó correctamente el turno con ID: 5
+[2023-06-30 17:16:03] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Juan Pérez
+[2023-06-30 17:16:03] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: María López
+[2023-06-30 17:16:03] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Laura Gómez
+[2023-06-30 17:16:03] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Carlos Martínez
+[2023-06-30 17:16:03] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Ana Fernández
+[2023-06-30 17:16:03] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 1
+[2023-06-30 17:16:04] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 2
+[2023-06-30 17:16:04] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 3
+[2023-06-30 17:16:04] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 4
+[2023-06-30 17:16:04] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 5
+[2023-06-30 17:16:04] [ INFO ] [OdontologoService:138] Se cargaron correctamente los datos de prueba
+[2023-06-30 17:16:04] [ INFO ] [DomicilioService:78] Se creó correctamente el domicilio con ID: 1
+[2023-06-30 17:16:04] [ INFO ] [DomicilioService:86] Se creó correctamente el domicilio con ID: 2
+[2023-06-30 17:16:04] [ INFO ] [DomicilioService:94] Se creó correctamente el domicilio con ID: 3
+[2023-06-30 17:16:04] [ INFO ] [DomicilioService:102] Se creó correctamente el domicilio con ID: 4
+[2023-06-30 17:16:04] [ INFO ] [DomicilioService:110] Se creó correctamente el domicilio con ID: 5
+[2023-06-30 17:16:04] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Juan Pérez
+[2023-06-30 17:16:04] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: María López
+[2023-06-30 17:16:04] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Laura Gómez
+[2023-06-30 17:16:04] [ INFO ] [PacienteService:129] Se cargaron correctamente los datos de prueba para pacientes
+[2023-06-30 17:16:04] [ INFO ] [TurnoService:104] Se creó correctamente el turno con ID: 1
+[2023-06-30 17:16:04] [ INFO ] [TurnoService:111] Se creó correctamente el turno con ID: 2
+[2023-06-30 17:16:04] [ INFO ] [TurnoService:118] Se creó correctamente el turno con ID: 3
+[2023-06-30 17:16:04] [ INFO ] [TurnoService:125] Se creó correctamente el turno con ID: 4
+[2023-06-30 17:16:04] [ INFO ] [TurnoService:132] Se creó correctamente el turno con ID: 5
+[2023-06-30 18:30:12] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Juan Pérez
+[2023-06-30 18:30:12] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: María López
+[2023-06-30 18:30:12] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Laura Gómez
+[2023-06-30 18:30:12] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Carlos Martínez
+[2023-06-30 18:30:12] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Ana Fernández
+[2023-06-30 18:30:12] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 1
+[2023-06-30 18:30:12] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 2
+[2023-06-30 18:30:12] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 3
+[2023-06-30 18:30:12] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 4
+[2023-06-30 18:30:12] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 5
+[2023-06-30 18:30:12] [ INFO ] [OdontologoService:138] Se cargaron correctamente los datos de prueba
+[2023-06-30 18:30:12] [ INFO ] [DomicilioService:78] Se creó correctamente el domicilio con ID: 1
+[2023-06-30 18:30:12] [ INFO ] [DomicilioService:86] Se creó correctamente el domicilio con ID: 2
+[2023-06-30 18:30:12] [ INFO ] [DomicilioService:94] Se creó correctamente el domicilio con ID: 3
+[2023-06-30 18:30:12] [ INFO ] [DomicilioService:102] Se creó correctamente el domicilio con ID: 4
+[2023-06-30 18:30:12] [ INFO ] [DomicilioService:110] Se creó correctamente el domicilio con ID: 5
+[2023-06-30 18:30:12] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Juan Pérez
+[2023-06-30 18:30:12] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: María López
+[2023-06-30 18:30:12] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Laura Gómez
+[2023-06-30 18:30:12] [ INFO ] [PacienteService:129] Se cargaron correctamente los datos de prueba para pacientes
+[2023-06-30 18:30:12] [ INFO ] [TurnoService:104] Se creó correctamente el turno con ID: 1
+[2023-06-30 18:30:12] [ INFO ] [TurnoService:111] Se creó correctamente el turno con ID: 2
+[2023-06-30 18:30:12] [ INFO ] [TurnoService:118] Se creó correctamente el turno con ID: 3
+[2023-06-30 18:30:12] [ INFO ] [TurnoService:125] Se creó correctamente el turno con ID: 4
+[2023-06-30 18:30:12] [ INFO ] [TurnoService:132] Se creó correctamente el turno con ID: 5
+[2023-06-30 18:31:36] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Juan Pérez
+[2023-06-30 18:31:36] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: María López
+[2023-06-30 18:31:36] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Laura Gómez
+[2023-06-30 18:31:36] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Carlos Martínez
+[2023-06-30 18:31:36] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Ana Fernández
+[2023-06-30 18:31:36] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 1
+[2023-06-30 18:31:36] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 2
+[2023-06-30 18:31:36] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 3
+[2023-06-30 18:31:36] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 4
+[2023-06-30 18:31:36] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 5
+[2023-06-30 18:31:36] [ INFO ] [OdontologoService:138] Se cargaron correctamente los datos de prueba
+[2023-06-30 18:31:36] [ INFO ] [DomicilioService:78] Se creó correctamente el domicilio con ID: 1
+[2023-06-30 18:31:36] [ INFO ] [DomicilioService:86] Se creó correctamente el domicilio con ID: 2
+[2023-06-30 18:31:36] [ INFO ] [DomicilioService:94] Se creó correctamente el domicilio con ID: 3
+[2023-06-30 18:31:36] [ INFO ] [DomicilioService:102] Se creó correctamente el domicilio con ID: 4
+[2023-06-30 18:31:36] [ INFO ] [DomicilioService:110] Se creó correctamente el domicilio con ID: 5
+[2023-06-30 18:31:36] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Juan Pérez
+[2023-06-30 18:31:36] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: María López
+[2023-06-30 18:31:36] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Laura Gómez
+[2023-06-30 18:31:36] [ INFO ] [PacienteService:129] Se cargaron correctamente los datos de prueba para pacientes
+[2023-06-30 18:31:36] [ INFO ] [TurnoService:104] Se creó correctamente el turno con ID: 1
+[2023-06-30 18:31:36] [ INFO ] [TurnoService:111] Se creó correctamente el turno con ID: 2
+[2023-06-30 18:31:36] [ INFO ] [TurnoService:118] Se creó correctamente el turno con ID: 3
+[2023-06-30 18:31:36] [ INFO ] [TurnoService:125] Se creó correctamente el turno con ID: 4
+[2023-06-30 18:31:36] [ INFO ] [TurnoService:132] Se creó correctamente el turno con ID: 5
+[2023-06-30 18:32:58] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Juan Pérez
+[2023-06-30 18:32:58] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: María López
+[2023-06-30 18:32:58] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Laura Gómez
+[2023-06-30 18:32:58] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Carlos Martínez
+[2023-06-30 18:32:58] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Ana Fernández
+[2023-06-30 18:32:58] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 1
+[2023-06-30 18:32:58] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 2
+[2023-06-30 18:32:58] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 3
+[2023-06-30 18:32:58] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 4
+[2023-06-30 18:32:58] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 5
+[2023-06-30 18:32:58] [ INFO ] [OdontologoService:138] Se cargaron correctamente los datos de prueba
+[2023-06-30 18:32:58] [ INFO ] [DomicilioService:78] Se creó correctamente el domicilio con ID: 1
+[2023-06-30 18:32:58] [ INFO ] [DomicilioService:86] Se creó correctamente el domicilio con ID: 2
+[2023-06-30 18:32:58] [ INFO ] [DomicilioService:94] Se creó correctamente el domicilio con ID: 3
+[2023-06-30 18:32:58] [ INFO ] [DomicilioService:102] Se creó correctamente el domicilio con ID: 4
+[2023-06-30 18:32:58] [ INFO ] [DomicilioService:110] Se creó correctamente el domicilio con ID: 5
+[2023-06-30 18:32:58] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Juan Pérez
+[2023-06-30 18:32:58] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: María López
+[2023-06-30 18:32:58] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Laura Gómez
+[2023-06-30 18:32:58] [ INFO ] [PacienteService:129] Se cargaron correctamente los datos de prueba para pacientes
+[2023-06-30 18:32:58] [ INFO ] [TurnoService:104] Se creó correctamente el turno con ID: 1
+[2023-06-30 18:32:58] [ INFO ] [TurnoService:111] Se creó correctamente el turno con ID: 2
+[2023-06-30 18:32:58] [ INFO ] [TurnoService:118] Se creó correctamente el turno con ID: 3
+[2023-06-30 18:32:58] [ INFO ] [TurnoService:125] Se creó correctamente el turno con ID: 4
+[2023-06-30 18:32:58] [ INFO ] [TurnoService:132] Se creó correctamente el turno con ID: 5
+[2023-06-30 18:33:49] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-30 18:33:52] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-30 18:33:57] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Brahian Puschiasis
+[2023-06-30 18:33:57] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-30 18:34:11] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Juan Pérez
+[2023-06-30 18:34:11] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: María López
+[2023-06-30 18:34:11] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Laura Gómez
+[2023-06-30 18:34:11] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Carlos Martínez
+[2023-06-30 18:34:11] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Ana Fernández
+[2023-06-30 18:34:11] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 1
+[2023-06-30 18:34:11] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 2
+[2023-06-30 18:34:11] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 3
+[2023-06-30 18:34:11] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 4
+[2023-06-30 18:34:11] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 5
+[2023-06-30 18:34:11] [ INFO ] [OdontologoService:138] Se cargaron correctamente los datos de prueba
+[2023-06-30 18:34:11] [ INFO ] [DomicilioService:78] Se creó correctamente el domicilio con ID: 1
+[2023-06-30 18:34:11] [ INFO ] [DomicilioService:86] Se creó correctamente el domicilio con ID: 2
+[2023-06-30 18:34:11] [ INFO ] [DomicilioService:94] Se creó correctamente el domicilio con ID: 3
+[2023-06-30 18:34:11] [ INFO ] [DomicilioService:102] Se creó correctamente el domicilio con ID: 4
+[2023-06-30 18:34:11] [ INFO ] [DomicilioService:110] Se creó correctamente el domicilio con ID: 5
+[2023-06-30 18:34:11] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Juan Pérez
+[2023-06-30 18:34:11] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: María López
+[2023-06-30 18:34:11] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Laura Gómez
+[2023-06-30 18:34:11] [ INFO ] [PacienteService:129] Se cargaron correctamente los datos de prueba para pacientes
+[2023-06-30 18:34:11] [ INFO ] [TurnoService:104] Se creó correctamente el turno con ID: 1
+[2023-06-30 18:34:11] [ INFO ] [TurnoService:111] Se creó correctamente el turno con ID: 2
+[2023-06-30 18:34:11] [ INFO ] [TurnoService:118] Se creó correctamente el turno con ID: 3
+[2023-06-30 18:34:11] [ INFO ] [TurnoService:125] Se creó correctamente el turno con ID: 4
+[2023-06-30 18:34:11] [ INFO ] [TurnoService:132] Se creó correctamente el turno con ID: 5
+[2023-06-30 18:35:10] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-30 18:35:11] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-30 18:35:14] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 1
+[2023-06-30 18:35:14] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-30 18:35:22] [ INFO ] [OdontologoService:90] Se eliminó correctamente el odontólogo con ID: 4
+[2023-06-30 18:35:24] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-30 18:35:28] [ INFO ] [TurnoService:43] Se creó correctamente el turno con ID: 6
+[2023-06-30 18:37:30] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Juan Pérez
+[2023-06-30 18:37:30] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: María López
+[2023-06-30 18:37:30] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Laura Gómez
+[2023-06-30 18:37:30] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Carlos Martínez
+[2023-06-30 18:37:30] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Ana Fernández
+[2023-06-30 18:37:30] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 1
+[2023-06-30 18:37:30] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 2
+[2023-06-30 18:37:30] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 3
+[2023-06-30 18:37:30] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 4
+[2023-06-30 18:37:30] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 5
+[2023-06-30 18:37:30] [ INFO ] [OdontologoService:138] Se cargaron correctamente los datos de prueba
+[2023-06-30 18:37:30] [ INFO ] [DomicilioService:78] Se creó correctamente el domicilio con ID: 1
+[2023-06-30 18:37:30] [ INFO ] [DomicilioService:86] Se creó correctamente el domicilio con ID: 2
+[2023-06-30 18:37:30] [ INFO ] [DomicilioService:94] Se creó correctamente el domicilio con ID: 3
+[2023-06-30 18:37:30] [ INFO ] [DomicilioService:102] Se creó correctamente el domicilio con ID: 4
+[2023-06-30 18:37:30] [ INFO ] [DomicilioService:110] Se creó correctamente el domicilio con ID: 5
+[2023-06-30 18:37:30] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Juan Pérez
+[2023-06-30 18:37:30] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: María López
+[2023-06-30 18:37:30] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Laura Gómez
+[2023-06-30 18:37:30] [ INFO ] [PacienteService:129] Se cargaron correctamente los datos de prueba para pacientes
+[2023-06-30 18:37:30] [ INFO ] [TurnoService:104] Se creó correctamente el turno con ID: 1
+[2023-06-30 18:37:30] [ INFO ] [TurnoService:111] Se creó correctamente el turno con ID: 2
+[2023-06-30 18:37:30] [ INFO ] [TurnoService:118] Se creó correctamente el turno con ID: 3
+[2023-06-30 18:37:30] [ INFO ] [TurnoService:125] Se creó correctamente el turno con ID: 4
+[2023-06-30 18:37:30] [ INFO ] [TurnoService:132] Se creó correctamente el turno con ID: 5
+[2023-06-30 18:37:38] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-30 18:39:29] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Juan Pérez
+[2023-06-30 18:39:29] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: María López
+[2023-06-30 18:39:29] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Laura Gómez
+[2023-06-30 18:39:29] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Carlos Martínez
+[2023-06-30 18:39:29] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Ana Fernández
+[2023-06-30 18:39:29] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 1
+[2023-06-30 18:39:29] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 2
+[2023-06-30 18:39:29] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 3
+[2023-06-30 18:39:29] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 4
+[2023-06-30 18:39:29] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 5
+[2023-06-30 18:39:29] [ INFO ] [OdontologoService:138] Se cargaron correctamente los datos de prueba
+[2023-06-30 18:39:29] [ INFO ] [DomicilioService:78] Se creó correctamente el domicilio con ID: 1
+[2023-06-30 18:39:29] [ INFO ] [DomicilioService:86] Se creó correctamente el domicilio con ID: 2
+[2023-06-30 18:39:29] [ INFO ] [DomicilioService:94] Se creó correctamente el domicilio con ID: 3
+[2023-06-30 18:39:29] [ INFO ] [DomicilioService:102] Se creó correctamente el domicilio con ID: 4
+[2023-06-30 18:39:29] [ INFO ] [DomicilioService:110] Se creó correctamente el domicilio con ID: 5
+[2023-06-30 18:39:29] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Juan Pérez
+[2023-06-30 18:39:29] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: María López
+[2023-06-30 18:39:29] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Laura Gómez
+[2023-06-30 18:39:29] [ INFO ] [PacienteService:129] Se cargaron correctamente los datos de prueba para pacientes
+[2023-06-30 18:39:29] [ INFO ] [TurnoService:104] Se creó correctamente el turno con ID: 1
+[2023-06-30 18:39:29] [ INFO ] [TurnoService:111] Se creó correctamente el turno con ID: 2
+[2023-06-30 18:39:29] [ INFO ] [TurnoService:118] Se creó correctamente el turno con ID: 3
+[2023-06-30 18:39:29] [ INFO ] [TurnoService:125] Se creó correctamente el turno con ID: 4
+[2023-06-30 18:39:29] [ INFO ] [TurnoService:132] Se creó correctamente el turno con ID: 5
+[2023-06-30 18:41:23] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Juan Pérez
+[2023-06-30 18:41:23] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: María López
+[2023-06-30 18:41:23] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Laura Gómez
+[2023-06-30 18:41:23] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Carlos Martínez
+[2023-06-30 18:41:23] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Ana Fernández
+[2023-06-30 18:41:23] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 1
+[2023-06-30 18:41:23] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 2
+[2023-06-30 18:41:23] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 3
+[2023-06-30 18:41:23] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 4
+[2023-06-30 18:41:23] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 5
+[2023-06-30 18:41:23] [ INFO ] [OdontologoService:138] Se cargaron correctamente los datos de prueba
+[2023-06-30 18:41:23] [ INFO ] [DomicilioService:78] Se creó correctamente el domicilio con ID: 1
+[2023-06-30 18:41:23] [ INFO ] [DomicilioService:86] Se creó correctamente el domicilio con ID: 2
+[2023-06-30 18:41:23] [ INFO ] [DomicilioService:94] Se creó correctamente el domicilio con ID: 3
+[2023-06-30 18:41:23] [ INFO ] [DomicilioService:102] Se creó correctamente el domicilio con ID: 4
+[2023-06-30 18:41:23] [ INFO ] [DomicilioService:110] Se creó correctamente el domicilio con ID: 5
+[2023-06-30 18:41:23] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Juan Pérez
+[2023-06-30 18:41:23] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: María López
+[2023-06-30 18:41:23] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Laura Gómez
+[2023-06-30 18:41:23] [ INFO ] [PacienteService:129] Se cargaron correctamente los datos de prueba para pacientes
+[2023-06-30 18:41:23] [ INFO ] [TurnoService:104] Se creó correctamente el turno con ID: 1
+[2023-06-30 18:41:23] [ INFO ] [TurnoService:111] Se creó correctamente el turno con ID: 2
+[2023-06-30 18:41:23] [ INFO ] [TurnoService:118] Se creó correctamente el turno con ID: 3
+[2023-06-30 18:41:23] [ INFO ] [TurnoService:125] Se creó correctamente el turno con ID: 4
+[2023-06-30 18:41:23] [ INFO ] [TurnoService:132] Se creó correctamente el turno con ID: 5
+[2023-06-30 18:42:07] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Juan Pérez
+[2023-06-30 18:42:07] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: María López
+[2023-06-30 18:42:07] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Laura Gómez
+[2023-06-30 18:42:07] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Carlos Martínez
+[2023-06-30 18:42:07] [ INFO ] [OdontologoService:65] Se creó correctamente el odontólogo: Ana Fernández
+[2023-06-30 18:42:07] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 1
+[2023-06-30 18:42:07] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 2
+[2023-06-30 18:42:07] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 3
+[2023-06-30 18:42:07] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 4
+[2023-06-30 18:42:07] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 5
+[2023-06-30 18:42:07] [ INFO ] [OdontologoService:138] Se cargaron correctamente los datos de prueba
+[2023-06-30 18:42:07] [ INFO ] [DomicilioService:78] Se creó correctamente el domicilio con ID: 1
+[2023-06-30 18:42:07] [ INFO ] [DomicilioService:86] Se creó correctamente el domicilio con ID: 2
+[2023-06-30 18:42:07] [ INFO ] [DomicilioService:94] Se creó correctamente el domicilio con ID: 3
+[2023-06-30 18:42:07] [ INFO ] [DomicilioService:102] Se creó correctamente el domicilio con ID: 4
+[2023-06-30 18:42:07] [ INFO ] [DomicilioService:110] Se creó correctamente el domicilio con ID: 5
+[2023-06-30 18:42:07] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Juan Pérez
+[2023-06-30 18:42:07] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: María López
+[2023-06-30 18:42:07] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Laura Gómez
+[2023-06-30 18:42:07] [ INFO ] [PacienteService:129] Se cargaron correctamente los datos de prueba para pacientes
+[2023-06-30 18:42:07] [ INFO ] [TurnoService:104] Se creó correctamente el turno con ID: 1
+[2023-06-30 18:42:07] [ INFO ] [TurnoService:111] Se creó correctamente el turno con ID: 2
+[2023-06-30 18:42:07] [ INFO ] [TurnoService:118] Se creó correctamente el turno con ID: 3
+[2023-06-30 18:42:07] [ INFO ] [TurnoService:125] Se creó correctamente el turno con ID: 4
+[2023-06-30 18:42:07] [ INFO ] [TurnoService:132] Se creó correctamente el turno con ID: 5
+[2023-06-30 18:42:13] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-30 18:42:15] [ INFO ] [OdontologoService:76] Se modificó correctamente el odontólogo con ID: 1
+[2023-06-30 18:42:16] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-30 18:42:18] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-30 18:42:26] [ INFO ] [PacienteService:47] Se creó correctamente el paciente: Alegre Virginia
+[2023-06-30 18:42:38] [ INFO ] [TurnoService:43] Se creó correctamente el turno con ID: 6
+[2023-06-30 18:42:45] [ INFO ] [TurnoService:43] Se creó correctamente el turno con ID: 7
+[2023-06-30 18:42:49] [ INFO ] [OdontologoService:36] La lista de odontólogos se trajo correctamente
+[2023-06-30 18:42:50] [ INFO ] [OdontologoService:90] Se eliminó correctamente el odontólogo con ID: 1
